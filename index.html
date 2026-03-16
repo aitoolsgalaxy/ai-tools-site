@@ -4,16 +4,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AI Tools Galaxy</title>
 
 <style>
-
 body{
 font-family:Arial,sans-serif;
 background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
 margin:0;
+line-height:1.6;
 }
 
 nav{
@@ -33,7 +32,7 @@ font-weight:bold;
 
 header{
 text-align:center;
-padding:80px 20px;
+padding:80px 20px 50px;
 }
 
 header h1{
@@ -41,10 +40,46 @@ font-size:48px;
 margin-bottom:10px;
 }
 
+header p{
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+}
+
 .section{
 max-width:1100px;
 margin:auto;
 padding:40px 20px;
+}
+
+.search-box{
+text-align:center;
+margin-bottom:30px;
+}
+
+.search-box input{
+width:320px;
+max-width:90%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+.search-box button{
+padding:12px 18px;
+border:none;
+border-radius:8px;
+background:#2563eb;
+color:white;
+font-weight:bold;
+cursor:pointer;
+margin-left:8px;
+}
+
+#searchResults{
+margin-top:20px;
+text-align:center;
 }
 
 .grid{
@@ -85,40 +120,37 @@ padding:30px;
 background:#111827;
 margin-top:40px;
 }
-
 </style>
-
 </head>
 
 <body>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="100-ai-tools.html">100 AI Tools</a>
-
 <a href="ai-tools-list.html">Tools List</a>
-
 <a href="ai-writing-tools.html">Writing Tools</a>
-
 <a href="ai-image-tools.html">Image Tools</a>
-
 <a href="ai-productivity-tools.html">Productivity Tools</a>
-
 <a href="ai-tools-for-students.html">Student Tools</a>
-
 </nav>
 
 <header>
-
 <h1>AI Tools Galaxy</h1>
-
 <p>Discover the best AI tools for writing, studying, productivity and creativity.</p>
-
 <a class="button" href="100-ai-tools.html">Explore 100 AI Tools</a>
-
 </header>
+
+<section class="section">
+
+<div class="search-box">
+<input type="text" id="toolSearch" placeholder="Search writing, students, image, productivity...">
+<button onclick="searchTools()">Search</button>
+</div>
+
+<div id="searchResults"></div>
+
+</section>
 
 <section class="section">
 
@@ -127,75 +159,39 @@ margin-top:40px;
 <div class="grid">
 
 <div class="card">
-
 <h3>ChatGPT</h3>
-
 <p>AI assistant for writing, studying and productivity.</p>
-
-<a class="button" href="https://chat.openai.com" target="_blank">
-Visit ChatGPT
-</a>
-
+<a class="button" href="https://chat.openai.com" target="_blank">Visit ChatGPT</a>
 </div>
 
 <div class="card">
-
 <h3>Grammarly</h3>
-
 <p>Improve grammar and writing quality using AI.</p>
-
-<a class="button" href="https://www.grammarly.com" target="_blank">
-Visit Grammarly
-</a>
-
+<a class="button" href="https://www.grammarly.com" target="_blank">Visit Grammarly</a>
 </div>
 
 <div class="card">
-
 <h3>Notion AI</h3>
-
 <p>Productivity workspace with AI writing and planning.</p>
-
-<a class="button" href="https://www.notion.so" target="_blank">
-Visit Notion
-</a>
-
+<a class="button" href="https://www.notion.so" target="_blank">Visit Notion</a>
 </div>
 
 <div class="card">
-
 <h3>Canva AI</h3>
-
 <p>Create images, designs and presentations with AI.</p>
-
-<a class="button" href="https://www.canva.com" target="_blank">
-Visit Canva
-</a>
-
+<a class="button" href="https://www.canva.com" target="_blank">Visit Canva</a>
 </div>
 
 <div class="card">
-
 <h3>Midjourney</h3>
-
 <p>Generate AI art and images from text prompts.</p>
-
-<a class="button" href="https://www.midjourney.com" target="_blank">
-Visit Midjourney
-</a>
-
+<a class="button" href="https://www.midjourney.com" target="_blank">Visit Midjourney</a>
 </div>
 
 <div class="card">
-
 <h3>Zapier</h3>
-
 <p>Automate workflows and connect apps using AI.</p>
-
-<a class="button" href="https://zapier.com" target="_blank">
-Visit Zapier
-</a>
-
+<a class="button" href="https://zapier.com" target="_blank">Visit Zapier</a>
 </div>
 
 </div>
@@ -209,51 +205,27 @@ Visit Zapier
 <div class="grid">
 
 <div class="card">
-
 <h3>AI Writing Tools</h3>
-
 <p>Tools for essays, content writing and copywriting.</p>
-
-<a class="button" href="ai-writing-tools.html">
-Open Page
-</a>
-
+<a class="button" href="ai-writing-tools.html">Open Page</a>
 </div>
 
 <div class="card">
-
 <h3>AI Image Tools</h3>
-
 <p>Create images, graphics and artwork using AI.</p>
-
-<a class="button" href="ai-image-tools.html">
-Open Page
-</a>
-
+<a class="button" href="ai-image-tools.html">Open Page</a>
 </div>
 
 <div class="card">
-
 <h3>AI Productivity Tools</h3>
-
 <p>Automate work and increase productivity.</p>
-
-<a class="button" href="ai-productivity-tools.html">
-Open Page
-</a>
-
+<a class="button" href="ai-productivity-tools.html">Open Page</a>
 </div>
 
 <div class="card">
-
 <h3>AI Tools for Students</h3>
-
 <p>Study faster and improve learning with AI.</p>
-
-<a class="button" href="ai-tools-for-students.html">
-Open Page
-</a>
-
+<a class="button" href="ai-tools-for-students.html">Open Page</a>
 </div>
 
 </div>
@@ -261,11 +233,37 @@ Open Page
 </section>
 
 <footer>
-
 <p>© 2026 AI Tools Galaxy</p>
-
 </footer>
 
-</body>
+<script>
+function searchTools(){
+const query = document.getElementById("toolSearch").value.toLowerCase().trim();
+const results = document.getElementById("searchResults");
 
+if(query.includes("writing") || query.includes("essay") || query.includes("grammar")){
+results.innerHTML = 'Best match: <a style="color:#8fd3ff;" href="ai-writing-tools.html">AI Writing Tools</a>';
+}
+else if(query.includes("student") || query.includes("study") || query.includes("homework") || query.includes("exam")){
+results.innerHTML = 'Best match: <a style="color:#8fd3ff;" href="ai-tools-for-students.html">AI Tools for Students</a>';
+}
+else if(query.includes("image") || query.includes("art") || query.includes("design") || query.includes("thumbnail")){
+results.innerHTML = 'Best match: <a style="color:#8fd3ff;" href="ai-image-tools.html">AI Image Tools</a>';
+}
+else if(query.includes("productivity") || query.includes("task") || query.includes("notes") || query.includes("workflow") || query.includes("automation")){
+results.innerHTML = 'Best match: <a style="color:#8fd3ff;" href="ai-productivity-tools.html">AI Productivity Tools</a>';
+}
+else if(query.includes("tools") || query.includes("list") || query.includes("directory")){
+results.innerHTML = 'Best match: <a style="color:#8fd3ff;" href="100-ai-tools.html">100 AI Tools</a>';
+}
+else if(query.length > 0){
+results.innerHTML = 'No exact match found. Try: writing, students, image, productivity, or tools.';
+}
+else{
+results.innerHTML = 'Please enter a keyword first.';
+}
+}
+</script>
+
+</body>
 </html>

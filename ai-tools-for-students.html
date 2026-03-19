@@ -3,7 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Tools for Students | AI Tools Galaxy</title>
+
+<title>Best AI Tools for Students (2026) | AI Tools Galaxy</title>
+<meta name="description" content="Discover the best AI tools for students to write essays, study faster, organize notes, research better, and prepare for exams with less stress.">
+<meta name="keywords" content="AI tools for students, best AI tools for students, study AI tools, homework AI tools, essay AI tools, student productivity tools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://aitoolsgalaxy.github.io/ai-tools-site/ai-tools-for-students.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Best AI Tools for Students (2026) | AI Tools Galaxy">
+<meta property="og:description" content="Discover the best AI tools for students to write essays, study faster, organize notes, research better, and prepare for exams.">
+<meta property="og:url" content="https://aitoolsgalaxy.github.io/ai-tools-site/ai-tools-for-students.html">
+<meta property="og:site_name" content="AI Tools Galaxy">
 
 <style>
 :root{
@@ -19,9 +30,12 @@
   --purple:#8b5dff;
   --green:#59f0c2;
   --yellow:#ffd166;
+  --shadow:0 12px 40px rgba(84,69,255,0.22);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
 
 body{
   font-family:Arial,sans-serif;
@@ -34,33 +48,70 @@ body{
     radial-gradient(circle at 28% 86%, rgba(139,93,255,0.22), transparent 22%),
     linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3),var(--bg4));
   background-attachment:fixed;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.45;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.7), transparent),
+    radial-gradient(2px 2px at 140px 80px, rgba(255,255,255,.55), transparent),
+    radial-gradient(1.5px 1.5px at 260px 120px, rgba(255,255,255,.55), transparent),
+    radial-gradient(2px 2px at 420px 40px, rgba(255,255,255,.5), transparent),
+    radial-gradient(1.5px 1.5px at 560px 160px, rgba(255,255,255,.45), transparent),
+    radial-gradient(2px 2px at 760px 90px, rgba(255,255,255,.55), transparent);
+  background-size:900px 220px;
 }
 
 a{text-decoration:none;color:inherit}
 
 .navbar{
-  position:sticky;top:0;z-index:1000;
+  position:sticky;
+  top:0;
+  z-index:1000;
   backdrop-filter:blur(16px);
   background:rgba(10,10,30,0.45);
   border-bottom:1px solid var(--border);
 }
 
 .nav-inner{
-  max-width:1200px;margin:auto;padding:16px 20px;
-  display:flex;justify-content:space-between;align-items:center;gap:20px;
+  max-width:1200px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
 }
 
 .brand{
-  display:flex;align-items:center;gap:12px;font-weight:bold;font-size:20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:bold;
+  font-size:20px;
 }
 
 .brand-badge{
-  width:40px;height:40px;border-radius:14px;
-  display:flex;align-items:center;justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background:linear-gradient(135deg,var(--pink),var(--purple),var(--blue));
+  box-shadow:0 10px 30px rgba(139,93,255,.35);
 }
 
-.nav-links{display:flex;gap:18px;flex-wrap:wrap}
+.nav-links{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
 
 .nav-links a{
   color:rgba(255,255,255,0.9);
@@ -99,10 +150,63 @@ a{text-decoration:none;color:inherit}
   color:var(--muted);
 }
 
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:26px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 22px;
+  border-radius:14px;
+  font-weight:bold;
+  transition:.2s ease;
+}
+
+.btn:hover{transform:translateY(-2px)}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--pink),var(--purple),var(--blue));
+  color:white;
+  box-shadow:0 14px 34px rgba(108,84,255,.35);
+}
+
+.btn-secondary{
+  background:rgba(255,255,255,0.08);
+  border:1px solid var(--border);
+  color:white;
+}
+
+.hero-proof{
+  margin-top:16px;
+  font-size:14px;
+  color:rgba(255,255,255,.78);
+}
+
 .section{
   max-width:1200px;
   margin:auto;
   padding:30px 20px 70px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:38px;
+  margin-bottom:12px;
+  letter-spacing:-1px;
+}
+
+.section-sub{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 28px;
+  color:var(--muted);
+  font-size:18px;
 }
 
 .grid{
@@ -117,6 +221,12 @@ a{text-decoration:none;color:inherit}
   padding:24px;
   border-radius:24px;
   box-shadow:0 20px 50px rgba(0,0,0,0.28);
+  transition:.2s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 24px 56px rgba(0,0,0,0.32);
 }
 
 .badge{
@@ -155,6 +265,7 @@ a{text-decoration:none;color:inherit}
   border-radius:24px;
   background:rgba(255,255,255,0.08);
   border:1px solid var(--border);
+  backdrop-filter:blur(12px);
 }
 
 .info h2{
@@ -166,6 +277,75 @@ a{text-decoration:none;color:inherit}
   color:rgba(255,255,255,0.86);
 }
 
+.how-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:22px;
+  margin-top:10px;
+}
+
+.step-card{
+  padding:24px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid var(--border);
+  backdrop-filter:blur(12px);
+  box-shadow:var(--shadow);
+}
+
+.step-number{
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  margin-bottom:14px;
+  background:linear-gradient(135deg,var(--pink),var(--purple),var(--blue));
+}
+
+.step-card h3{
+  margin-bottom:8px;
+  font-size:22px;
+}
+
+.step-card p{
+  color:rgba(255,255,255,0.84);
+}
+
+.faq{
+  display:grid;
+  gap:14px;
+  max-width:900px;
+  margin:auto;
+}
+
+.faq-item{
+  padding:22px;
+  border-radius:22px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid var(--border);
+  backdrop-filter:blur(12px);
+}
+
+.faq-item h3{
+  margin-bottom:8px;
+  font-size:20px;
+}
+
+.faq-item p{
+  color:rgba(255,255,255,0.84);
+}
+
+.disclaimer{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  color:rgba(255,255,255,0.66);
+  font-size:13px;
+}
+
 .footer{
   margin-top:30px;
   padding:40px 20px;
@@ -174,7 +354,9 @@ a{text-decoration:none;color:inherit}
   border-top:1px solid var(--border);
 }
 
-.footer p{color:rgba(255,255,255,0.88)}
+.footer p{
+  color:rgba(255,255,255,0.88);
+}
 
 @media (max-width:720px){
   .hero h1{font-size:38px}
@@ -206,51 +388,139 @@ a{text-decoration:none;color:inherit}
 <section class="hero">
   <div class="hero-tag">📘 Study smarter across the universe</div>
   <h1>Best AI Tools for Students</h1>
-  <p>Discover AI tools for studying, homework, essays, note-taking, revision, research, and exam preparation.</p>
+  <p>Discover AI tools for studying, homework, essays, note-taking, revision, research, and exam preparation — all in one place.</p>
+
+  <div class="hero-buttons">
+    <a class="btn btn-primary" href="#top-student-tools">🚀 Start with the best tools</a>
+    <a class="btn btn-secondary" href="#faq">💡 See quick answers</a>
+  </div>
+
+  <p class="hero-proof">⭐ Save time • 📚 Study smarter • ⚡ Finish work faster</p>
 </section>
 
 <section class="section">
+  <h2 class="section-title">Why students use AI tools</h2>
+  <p class="section-sub">The right tools can help you understand topics faster, write better essays, stay organized, and prepare for exams with less stress.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="badge">Homework</div>
+      <h3>Finish work faster</h3>
+      <p>Use AI to explain topics, summarize chapters, and help you start assignments quicker.</p>
+    </div>
+
+    <div class="card">
+      <div class="badge">Essays</div>
+      <h3>Write with less stress</h3>
+      <p>Improve grammar, structure, clarity, and confidence when writing school assignments.</p>
+    </div>
+
+    <div class="card">
+      <div class="badge">Study</div>
+      <h3>Revise smarter</h3>
+      <p>Create notes, flashcards, summaries, and study material more efficiently.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="top-student-tools">
+  <h2 class="section-title">Top AI tools for students</h2>
+  <p class="section-sub">These are the easiest tools to start with if you want fast results.</p>
+
   <div class="grid">
     <div class="card">
       <div class="badge">Study Help</div>
       <h3>ChatGPT</h3>
       <p>Useful for explanations, summaries, brainstorming, and understanding difficult topics faster.</p>
-      <a class="button" href="https://chat.openai.com" target="_blank">Visit</a>
+      <a class="button" href="https://chat.openai.com" target="_blank" rel="noopener">Start with ChatGPT</a>
     </div>
 
     <div class="card">
       <div class="badge">Writing</div>
       <h3>Grammarly</h3>
       <p>Improve essays, assignments, spelling, grammar, and writing clarity with less stress.</p>
-      <a class="button" href="https://www.grammarly.com" target="_blank">Visit</a>
+      <a class="button" href="https://www.grammarly.com" target="_blank" rel="noopener">Improve your writing</a>
     </div>
 
+    <div class="card">
+      <div class="badge">Presentations</div>
+      <h3>Canva</h3>
+      <p>Create presentations, visuals, posters, and class materials quickly, even as a beginner.</p>
+      <a class="button" href="https://www.canva.com" target="_blank" rel="noopener">Create faster</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">More useful student tools</h2>
+  <p class="section-sub">Here are more tools that can help with memory, notes, languages, and research.</p>
+
+  <div class="grid">
     <div class="card">
       <div class="badge">Flashcards</div>
       <h3>Quizlet</h3>
       <p>Popular for flashcards, memory practice, revision, and faster exam preparation.</p>
-      <a class="button" href="https://quizlet.com" target="_blank">Visit</a>
+      <a class="button" href="https://quizlet.com" target="_blank" rel="noopener">Visit Quizlet</a>
     </div>
 
     <div class="card">
       <div class="badge">Notes</div>
       <h3>Notion AI</h3>
       <p>Organize notes, summarize long material, and manage school projects in one place.</p>
-      <a class="button" href="https://www.notion.so" target="_blank">Visit</a>
+      <a class="button" href="https://www.notion.so" target="_blank" rel="noopener">Visit Notion AI</a>
     </div>
 
     <div class="card">
       <div class="badge">Research</div>
       <h3>Google Gemini</h3>
       <p>Helpful for idea generation, research support, and learning new topics more efficiently.</p>
-      <a class="button" href="https://gemini.google.com" target="_blank">Visit</a>
+      <a class="button" href="https://gemini.google.com" target="_blank" rel="noopener">Visit Gemini</a>
     </div>
 
     <div class="card">
       <div class="badge">Languages</div>
       <h3>Duolingo</h3>
       <p>An AI-powered language learning tool for vocabulary, speaking practice, and revision.</p>
-      <a class="button" href="https://www.duolingo.com" target="_blank">Visit</a>
+      <a class="button" href="https://www.duolingo.com" target="_blank" rel="noopener">Visit Duolingo</a>
+    </div>
+
+    <div class="card">
+      <div class="badge">Writing</div>
+      <h3>Perplexity</h3>
+      <p>Useful for finding better answers, quicker research, and understanding topics more clearly.</p>
+      <a class="button" href="https://www.perplexity.ai" target="_blank" rel="noopener">Visit Perplexity</a>
+    </div>
+
+    <div class="card">
+      <div class="badge">Organizing</div>
+      <h3>Google Docs</h3>
+      <p>Still one of the best free tools for writing, collaboration, and keeping study material in one place.</p>
+      <a class="button" href="https://docs.google.com" target="_blank" rel="noopener">Visit Google Docs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">How to use AI tools for studying</h2>
+  <p class="section-sub">A simple way to start without overthinking it.</p>
+
+  <div class="how-grid">
+    <div class="step-card">
+      <div class="step-number">1</div>
+      <h3>Pick one task</h3>
+      <p>Start with one problem only, like homework, essay writing, or revision.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-number">2</div>
+      <h3>Choose the right tool</h3>
+      <p>Use ChatGPT for ideas, Grammarly for writing, and Canva for presentations.</p>
+    </div>
+
+    <div class="step-card">
+      <div class="step-number">3</div>
+      <h3>Save time daily</h3>
+      <p>Use AI as support, not replacement, and focus on learning faster and smarter.</p>
     </div>
   </div>
 
@@ -258,6 +528,39 @@ a{text-decoration:none;color:inherit}
     <h2>Why are AI tools useful for students?</h2>
     <p>AI tools can save time, explain confusing topics, improve writing, organize notes, support research, and make exam preparation easier. Used well, they can make learning faster and more confident.</p>
   </div>
+</section>
+
+<section class="section" id="faq">
+  <h2 class="section-title">FAQ</h2>
+  <p class="section-sub">Quick answers for students getting started with AI tools.</p>
+
+  <div class="faq">
+    <div class="faq-item">
+      <h3>Are these AI tools free?</h3>
+      <p>Many of them offer free plans or useful free versions. Some also have paid upgrades.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which tool should I start with first?</h3>
+      <p>Start with ChatGPT for explanations and ideas, Grammarly for writing, and Canva for presentations.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can AI tools help with homework?</h3>
+      <p>Yes, they can help explain topics, summarize information, improve writing, and save time while studying.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Should students rely on AI for everything?</h3>
+      <p>No. The best way is to use AI as support to learn faster, not as a full replacement for your own thinking.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="disclaimer">
+    Some links on this page may become affiliate links in the future, which means we may earn a commission at no extra cost to you.
+  </p>
 </section>
 
 <footer class="footer">
